@@ -1,0 +1,240 @@
+extends ../layouts/header
+block content
+    //
+      ==================================================
+      Global Page Section Start
+      ==================================================
+    section.global-page-header
+      .container
+        .row
+          .col-md-12
+            .block
+              h2 Blog With Right Sidebar
+              |                             
+              ol.breadcrumb
+                li
+                  a(href='index')
+                    i.ion-ios-home
+                    |                                         Home
+                |                                 
+                li.active Blog
+    // /#Page header
+    section#blog-full-width
+      .container
+        .row
+          .col-md-4
+            .sidebar
+              .search.widget
+                form.searchform(action='', method='get', role='search')
+                  .input-group
+                    input.form-control(type='text', placeholder='Search for...')
+                    |                                             
+                    span.input-group-btn
+                      button.btn.btn-default(type='button')
+                        i.ion-search
+                  // /input-group
+              |                                     
+              .author.widget
+                img.img-responsive(src='images/author/author-bg.jpg')
+                |                                         
+                .author-body.text-center
+                  .author-img
+                    img(src='images/author/author.jpg')
+                  |                                             
+                  .author-bio
+                    h3 Jonathon Andrew
+                    |                                                 
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt magnam asperiores consectetur, corporis ullam impedit.
+              |                                     
+              .categories.widget
+                h3.widget-head Categories
+                |                                         
+                ul
+                  li
+                    a(href='') Audio
+                    |  
+                    span.badge 1
+                  |                                             
+                  li
+                    a(href='') Gallery
+                    |  
+                    span.badge 2
+                  |                                             
+                  li
+                    a(href='') Image
+                    |  
+                    span.badge 4
+                  |                                             
+                  li
+                    a(href='') Standard
+                    |  
+                    span.badge 2
+                  |                                             
+                  li
+                    a(href='') Status
+                    |  
+                    span.badge 3
+              |                                     
+              |                                     
+              .recent-post.widget
+                h3 Recent Posts
+                |                                         
+                ul
+                  li
+                    a(href='#') Corporate meeting turns into a photoshooting.
+                    br
+                    |                                                 
+                    time 16 May, 2015
+                  |                                             
+                  li
+                    a(href='#') Statistics,analysis. The key to succes.
+                    br
+                    |                                                 
+                    time 15 May, 2015
+                  |                                             
+                  li
+                    a(href='#') Blog post without image, only text.
+                    br
+                    |                                                 
+                    time 14 May, 2015
+                  |                                             
+                  li
+                    a(href='#') Blog post with audio player. Share your creations.
+                    br
+                    |                                                 
+                    time 14 May, 2015
+                  |                                             
+                  li
+                    a(href='#') Blog post with classic Youtbube player.
+                    br
+                    |                                                 
+                    time 12 May, 2015
+          |                             
+          .col-md-8
+            article.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='500ms')
+              .blog-post-image
+                a(href='post-fullwidth')
+                  img.img-responsive(src='images/blog/post-1.jpg', alt='')
+              |                                     
+              .blog-content
+                h2.blogpost-title
+                  a(href='post-fullwidth') Space shouldn&rsquo;t be the final frontier
+                |                                         
+                .blog-meta
+                  span Dec 11, 2020
+                  |                                             
+                  span
+                    | by 
+                    a(href='') Admin
+                  |                                             
+                  span
+                    a(href='') business
+                    | ,
+                    a(href='') people
+                |                                         
+                p
+                  | Ultrices posuere cubilia curae curabitur sit amet tortor ut massa commodo. Vestibulum consectetur euismod malesuada tincidunt cum. Sed ullamcorper dignissim consectetur ut tincidunt eros sed sapien consectetur dictum. Pellentesques sed volutpat ante, cursus port. Praesent mi magna, penatibus et magniseget dis parturient montes sed quia consequuntur magni dolores eos qui ratione.
+                |                                         
+                a.btn.btn-dafault.btn-details(href='single-post') Continue Reading
+            |                                 
+            article.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='500ms')
+              .blog-post-image
+                a(href='post-fullwidth')
+                  img.img-responsive(src='images/blog/post-2.jpg', alt='')
+              |                                     
+              .blog-content
+                h2.blogpost-title
+                  a(href='post-fullwidth') Space shouldn&rsquo;t be the final frontier
+                |                                         
+                .blog-meta
+                  span Dec 11, 2020
+                  |                                             
+                  span
+                    | by 
+                    a(href='') Admin
+                  |                                             
+                  span
+                    a(href='') business
+                    | ,
+                    a(href='') people
+                |                                         
+                p
+                  | Ultrices posuere cubilia curae curabitur sit amet tortor ut massa commodo. Vestibulum consectetur euismod malesuada tincidunt cum. Sed ullamcorper dignissim consectetur ut tincidunt eros sed sapien consectetur dictum. Pellentesques sed volutpat ante, cursus port. Praesent mi magna, penatibus et magniseget dis parturient montes sed quia consequuntur magni dolores eos qui ratione.
+                |                                         
+                a.btn.btn-dafault.btn-details(href='single-post') Continue Reading
+            |                                 
+            article.wow.fadeInDown(data-wow-delay='.7s', data-wow-duration='500ms')
+              .blog-post-image
+                a(href='post-fullwidth')
+                  img.img-responsive(src='images/blog/post-3.jpg', alt='')
+              |                                     
+              .blog-content
+                h2.blogpost-title
+                  a(href='post-fullwidth') Space shouldn&rsquo;t be the final frontier
+                |                                         
+                .blog-meta
+                  span Dec 11, 2020
+                  |                                             
+                  span
+                    | by 
+                    a(href='') Admin
+                  |                                             
+                  span
+                    a(href='') business
+                    | ,
+                    a(href='') people
+                |                                         
+                p
+                  | Ultrices posuere cubilia curae curabitur sit amet tortor ut massa commodo. Vestibulum consectetur euismod malesuada tincidunt cum. Sed ullamcorper dignissim consectetur ut tincidunt eros sed sapien consectetur dictum. Pellentesques sed volutpat ante, cursus port. Praesent mi magna, penatibus et magniseget dis parturient montes sed quia consequuntur magni dolores eos qui ratione.
+                |                                         
+                a.btn.btn-dafault.btn-details(href='single-post') Continue Reading
+    //
+      ==================================================
+      Call To Action Section Start
+      ==================================================
+    section#call-to-action
+      .container
+        .row
+          .col-md-12
+            .block
+              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='300ms')
+                | SO WHAT YOU THINK ?
+                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='300ms')
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+                  br
+                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
+                |                                         
+                a.btn.btn-default.btn-contact.wow.fadeInDown(href='contact', data-wow-delay='.7s', data-wow-duration='300ms') Contact With Me
+    //
+      ==================================================
+      Footer Section Start
+      ==================================================
+    footer#footer
+      .container
+        .col-md-8
+          p.copyright
+            | Copyright: 
+            span 2015
+            |  . Design and Developed by 
+            a(href='http://www.Themefisher.com') Themefisher
+        |                             
+        .col-md-4
+          // Social Media
+          ul.social
+            li
+              a.Facebook(href='#')
+                i.ion-social-facebook
+            |                                     
+            li
+              a.Twitter(href='#')
+                i.ion-social-twitter
+            |                                     
+            li
+              a.Linkedin(href='#')
+                i.ion-social-linkedin
+            |                                     
+            li
+              a.Google.Plus(href='#')
+                i.ion-social-googleplus
+    // /#footer

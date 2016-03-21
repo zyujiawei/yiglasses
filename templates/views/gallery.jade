@@ -1,25 +1,126 @@
-extends ../layouts/default
-
-block intro
-	.container
-		h1 Gallery
-	
+extends ../layouts/header
 block content
-	.container
-		if galleries.length
-			each gallery in galleries
-				h2= gallery.name
-					if gallery.publishedDate
-						.pull-right.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
-				
-				.row.gallery-images
-					if gallery.heroImage.exists
-						.col-sm-4.col-md-4.gallery-image: img(src=gallery._.heroImage.limit(680,680)).img-rounded
-						.col-sm-8.col-md-8: .row
-							each image in gallery.images
-								.col-xs-4.col-sm-4.col-md-3.gallery-image: img(src=image.limit(300,300)).img-rounded
-					else
-						each image in gallery.images
-							.col-xs-6.col-sm-4.col-md-3.gallery-image: img(src=image.limit(300,300)).img-rounded
-		else
-			h3.text-muted There are no image galleries yet.
+    //
+      ==================================================
+      Global Page Section Start
+      ==================================================
+    section.global-page-header
+      .container
+        .row
+          .col-md-12
+            .block
+              h2 Gallery
+              |                             
+              ol.breadcrumb
+                li
+                  a(href='index')
+                    i.ion-ios-home
+                    |                                         Home
+                |                                 
+                li.active Gallery
+    // /#Page header
+    section#gallery.gallery
+      .container
+        .row
+          .col-sm-4.col-xs-12
+            figure.wow.fadeInLeft.animated.portfolio-item.animated(data-wow-duration='500ms', data-wow-delay='0ms', style='visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 0ms; -webkit-animation-delay: 0ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-1.jpg', alt='this is a title')
+                |                                     
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-1.jpg') Demo
+          |                         
+          .col-sm-4.col-xs-12
+            figure.wow.fadeInLeft.animated.animated(data-wow-duration='500ms', data-wow-delay='300ms', style='visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-2.jpg', alt='this is a title')
+                |                                     
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-2.jpg') Demo
+          |                         
+          .col-sm-4.col-xs-12
+            figure.wow.fadeInLeft.animated.animated(data-wow-duration='500ms', data-wow-delay='500ms', style='visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-3.jpg', alt='')
+                |                                     
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-3.jpg') Demo
+          |                         
+          .col-sm-4.col-xs-12
+            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='700ms', style='visibility: hidden; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 600ms; -webkit-animation-delay: 600ms; animation-name: none; -webkit-animation-name: none;')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-4.jpg', alt='')
+                |                                     
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-4.jpg') Demo
+          |                         
+          .col-sm-4.col-xs-12
+            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='900ms', style='visibility: hidden; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 900ms; -webkit-animation-delay: 900ms; animation-name: none; -webkit-animation-name: none;')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-5.jpg', alt='')
+                |                                     
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-5.jpg') Demo
+          |                         
+          .col-sm-4.col-xs-12
+            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='1100ms', style='visibility: hidden; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 1200ms; -webkit-animation-delay: 1200ms; animation-name: none; -webkit-animation-name: none;')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-6.jpg', alt='')
+                |                                     
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-6.jpg') Demo
+    //
+      ==================================================
+      Call To Action Section Start
+      ==================================================
+    section#call-to-action
+      .container
+        .row
+          .col-md-12
+            .block
+              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='500ms')
+                | SO WHAT YOU THINK ?
+                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='500ms')
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+                  br
+                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
+                |                                 
+                a.btn.btn-default.btn-contact.wow.fadeInDown(href='#', data-wow-delay='.7s', data-wow-duration='500ms') Contact With Me
+    //
+      ==================================================
+      Footer Section Start
+      ==================================================
+    footer#footer
+      .container
+        .col-md-8
+          p.copyright
+            | Copyright: 
+            span 2015
+            |  . Design and Developed by 
+            a(href='http://www.Themefisher.com') Themefisher
+        |                     
+        .col-md-4
+          // Social Media
+          ul.social
+            li
+              a.Facebook(href='#')
+                i.ion-social-facebook
+            |                             
+            li
+              a.Twitter(href='#')
+                i.ion-social-twitter
+            |                             
+            li
+              a.Linkedin(href='#')
+                i.ion-social-linkedin
+            |                             
+            li
+              a.Google.Plus(href='#')
+                i.ion-social-googleplus
+    // /#footer

@@ -1,0 +1,229 @@
+extends ../layouts/header
+block content
+    //
+      ==================================================
+      Global Page Section Start
+      ==================================================
+    section.global-page-header
+      .container
+        .row
+          .col-md-12
+            .block
+              h2 Big Headline for Blog Post
+              |                             
+              .portfolio-meta
+                span Dec 11, 2020
+                | |
+                |                                 
+                span  Category: typography
+                | |
+                |                                 
+                span
+                  | Tags: 
+                  a(href='') business
+                  | ,
+                  a(href='') people
+    // /#Page header
+    section.single-post
+      .container
+        .row
+          .col-md-12
+            .post-img
+              img.img-responsive(alt='', src='images/blog/post-1.jpg')
+            |                             
+            .post-content
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sit expedita, iusto repellendus cumque, officia architecto consequatur illo fuga eum sed ut autem eos voluptas. Nemo, a, rem! Atque quisquam aperiam eaque tenetur autem, soluta itaque omnis. Minus nesciunt, sint, animi illum quo ab voluptate esse delectus unde maiores iure, quasi a suscipit ipsam aliquid voluptatem. Perspiciatis eveniet, pariatur illum aut cum dolor neque consequatur error aliquid facilis in quasi temporibus assumenda tempore, doloremque autem saepe enim nihil. Voluptates asperiores ullam voluptate quas similique ratione quia hic, eum distinctio laboriosam, consectetur tempora voluptatibus optio natus cumque est necessitatibus dolore alias.
+              |                                 
+              blockquote
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas alias ut totam labore, rerum soluta harum vitae pariatur, optio, ad dolore, nihil eligendi nesciunt repellat esse provident sapiente. Repellendus, minus!
+              |                                 
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis expedita repellendus laboriosam aliquid. Neque doloribus ea, id reprehenderit alias saepe debitis eligendi molestias odit, nesciunt rem. Dolorem saepe, provident dolore nesciunt laudantium nostrum enim natus veritatis harum maxime et iure ratione, nulla. Minus excepturi commodi tempore voluptate. Blanditiis similique dolor asperiores ex excepturi perspiciatis, dolores id esse. Voluptate beatae nesciunt cum esse ratione officiis necessitatibus blanditiis ea, laboriosam fugit vero maxime? Voluptatum illo dolorum autem pariatur quisquam. Voluptates soluta culpa necessitatibus veritatis tempora incidunt doloribus placeat repellat et facilis eum sapiente fugit numquam aut, laboriosam aspernatur, esse, magnam excepturi repudiandae amet voluptas nulla quidem. Veritatis nisi consequuntur saepe qui quisquam dignissimos assumenda, iusto odio. Dignissimos reprehenderit esse iusto cupiditate nisi enim, animi similique itaque, perspiciatis error qui. Aperiam, architecto provident.
+              |                                 
+              ol
+                li Ipsum dolor sit amet.
+                |                                     
+                li Lorem sit amet.
+                |                                     
+                li Lorem ipsum dolor sit amet.
+                |                                     
+                li Lorem ipsum dolor amet.
+              |                                 
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nostrum consectetur voluptatibus, odio ea ab distinctio, nulla asperiores facere sequi dolorum molestiae magni sed velit officia rerum illo necessitatibus consequatur maiores magnam possimus voluptas suscipit praesentium iste! Praesentium, modi, illum. Sint quis eos expedita porro voluptatum reiciendis minus vitae atque deleniti eligendi nulla, dolorem adipisci, assumenda sunt modi suscipit inventore hic nostrum veniam, ea accusantium quisquam! Ipsum odio, ducimus magnam nam ad quaerat soluta, ab laudantium beatae eius iusto fugit blanditiis laboriosam cupiditate dolor aut nulla a quam dolores? Unde, sunt, explicabo sapiente quos reiciendis iste fuga atque esse voluptatem.
+            |                             
+            ul.social-share
+              h4 Share this article
+              |                                 
+              li
+                a.Facebook(href='#')
+                  i.ion-social-facebook
+              |                                 
+              li
+                a.Twitter(href='#')
+                  i.ion-social-twitter
+              |                                 
+              li
+                a.Linkedin(href='#')
+                  i.ion-social-linkedin
+              |                                 
+              li
+                a.Google.Plus(href='#')
+                  i.ion-social-googleplus
+        |                     
+        .row
+          .col-md-12
+            .comments
+              .media
+                a.pull-left(href='')
+                  img.media-object(alt='', src='images/avater.jpg')
+                |                                     
+                .media-body
+                  h4.media-heading
+                    | Jonathon Andrew
+                  |                                         
+                  p.text-muted
+                    | 12 July 2013, 10:20 PM
+                  |                                         
+                  p
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                  |                                         
+                  a(href='') Reply
+                  |                                         
+                  hr
+                  // Nested media object
+                  .media
+                    a.pull-left(href='')
+                      img.media-object(alt='', src='images/avater-1.jpg')
+                    |                                             
+                    .media-body
+                      h4.media-heading
+                        | Tom Cruse
+                      |                                                 
+                      p.text-muted
+                        | 12 July 2013, 10:20 PM
+                      |                                                 
+                      p
+                        | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                  // end media
+                  hr
+                  |                                         
+                  .media
+                    a.pull-left(href='')
+                      img.media-object(alt='', src='images/avater-1.jpg')
+                    |                                             
+                    .media-body
+                      h4.media-heading
+                        | Nicolus Carolus
+                      |                                                 
+                      p.text-muted
+                        | 12 July 2013, 10:20 PM
+                      |                                                 
+                      p
+                        | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                  // end media
+              |                                 
+              .media
+                a.pull-left(href='')
+                  img.media-object(alt='', src='images/avater-2.jpg')
+                |                                     
+                .media-body
+                  h4.media-heading
+                    | Rob Martin
+                  |                                         
+                  p.text-muted
+                    | 12 July 2013, 10:20 PM
+                  |                                         
+                  p
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                  |                                         
+                  a(href='') Reply
+              |                                 
+              .media
+                a.pull-left(href='')
+                  img.media-object(alt='', src='images/avater-2.jpg')
+                |                                     
+                .media-body
+                  h4.media-heading
+                    | Mastarello
+                  |                                         
+                  p.text-muted
+                    | 12 July 2013, 10:20 PM
+                  |                                         
+                  p
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                  |                                         
+                  a(href='') Reply
+            |                             
+            .post-comment
+              h3 Leave a Reply
+              |                                 
+              form.form-horizontal(role='form')
+                .form-group
+                  .col-lg-6
+                    input.col-lg-12.form-control(type='text', placeholder='Name')
+                  |                                         
+                  .col-lg-6
+                    input.col-lg-12.form-control(type='text', placeholder='Email')
+                |                                     
+                .form-group
+                  .col-lg-12
+                    textarea.form-control(rows='8', placeholder='Message')
+                |                                     
+                p
+                |                                     
+                p
+                  button.btn.btn-send(type='submit') Comment
+                |                                     
+                |                                     
+                p
+    //
+      ==================================================
+      Call To Action Section Start
+      ==================================================
+    section#call-to-action
+      .container
+        .row
+          .col-md-12
+            .block
+              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='300ms')
+                | SO WHAT YOU THINK ?
+                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='300ms')
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+                  br
+                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
+                |                                 
+                a.btn.btn-default.btn-contact.wow.fadeInDown(href='#', data-wow-delay='.7s', data-wow-duration='300ms') Contact With Me
+    //
+      ==================================================
+      Footer Section Start
+      ==================================================
+    footer#footer
+      .container
+        .col-md-8
+          p.copyright
+            | Copyright: 
+            span 2015
+            |  . Design and Developed by 
+            a(href='http://www.Themefisher.com') Themefisher
+        |                     
+        .col-md-4
+          // Social Media
+          ul.social
+            li
+              a.Facebook(href='#')
+                i.ion-social-facebook
+            |                             
+            li
+              a.Twitter(href='#')
+                i.ion-social-twitter
+            |                             
+            li
+              a.Linkedin(href='#')
+                i.ion-social-linkedin
+            |                             
+            li
+              a.Google.Plus(href='#')
+                i.ion-social-googleplus
+    // /#footer

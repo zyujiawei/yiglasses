@@ -74,9 +74,7 @@ a:hover {
   border-radius: 0;
   margin-bottom: 0;
 }
-.navbar.navbar-default .navbar-toggle {
-  margin-top: 32px;
-}
+
 .navbar-header .navbar-brand {
   padding: 5px 0;
 }
@@ -89,26 +87,60 @@ a:hover {
 .navbar-inverse .navbar-toggle {
   background: #444;
 }
+
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #8F7A10;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #8F7A10;
+    background-color: #8F7A10;
+
+}
+
+.navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.navbar-collapse {
+  border: 0;
+  margin-top: 7px;
+}
+
 #top-bar {
-  background: #fff;
-  color: #fff;
-  -webkit-transition: all 0.2s ease-out 0s;
-  transition: all 0.2s ease-out 0s;
-  padding: 15px 0;
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #dedede;
+  background: #333;
+  color: #333;
+  -webkit-transition: padding .3s;
+  -moz-transition: padding .3s;
+  transition: padding .3s;
+}
+#top-bar img{
+  margin: 7px 0;
+  height: 47px;
+  width: 47px;
 }
 #top-bar .navbar-nav > li > a:hover {
   background: transparent;
 }
 #top-bar.animated-header {
-  padding: 20px 0;
-  background: #ffffff;
+  padding: 10px 0;
+  background: #333;
   box-shadow: none;
+  border:0;
+}
+#top-bar.animated-header img{
+  margin: 0 7px;
+  height:65px;
+  width: 65px;
 }
 #top-bar .main-menu li > a {
-  color: #444;
+  color: #fff;
 }
 #top-bar .main-menu li {
   position: relative;
@@ -123,7 +155,7 @@ a:hover {
   text-transform: uppercase;
 }
 #top-bar .main-menu li a:hover {
-  color: #02bdd5;
+  color: #8F7A10;
 }
 .navbar-custom .nav li > a {
   position: relative;

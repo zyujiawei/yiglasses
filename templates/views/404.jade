@@ -1,0 +1,64 @@
+extends ../layouts/header
+block content
+    |         
+    section.moduler.wrapper_404
+      .container
+        .row
+          .col-md-12
+            .text-center
+              h1.wow.fadeInUp.animated.cd-headline.slide(data-wow-delay='.4s') 404
+              |                             
+              h2.wow.fadeInUp.animated(data-wow-delay='.6s') Opps! You have some problems
+              |                             
+              p.wow.fadeInUp.animated(data-wow-delay='.9s') The page you are looking for was moved, removed, renamed or might never existed.
+              |                             
+              a.btn.btn-dafault.btn-home.wow.fadeInUp.animated(href='index', data-wow-delay='1.1s') Go Home
+    //
+      ==================================================
+      Call To Action Section Start
+      ==================================================
+    section#call-to-action
+      .container
+        .row
+          .col-md-12
+            .block
+              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='300ms')
+                | SO WHAT YOU THINK ?
+                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='300ms')
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+                  br
+                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
+                |                             
+                a.btn.btn-default.btn-contact.wow.fadeInDown(href='#', data-wow-delay='.7s', data-wow-duration='300ms') Contact With Me
+    //
+      ==================================================
+      Footer Section Start
+      ==================================================
+    footer#footer
+      .container
+        .col-md-8
+          p.copyright
+            | Copyright: 
+            span 2015
+            |  . Design and Developed by 
+            a(href='http://www.Themefisher.com') Themefisher
+        |                 
+        .col-md-4
+          // Social Media
+          ul.social
+            li
+              a.Facebook(href='#')
+                i.ion-social-facebook
+            |                         
+            li
+              a.Twitter(href='#')
+                i.ion-social-twitter
+            |                         
+            li
+              a.Linkedin(href='#')
+                i.ion-social-linkedin
+            |                         
+            li
+              a.Google.Plus(href='#')
+                i.ion-social-googleplus
+    // /#footer

@@ -1,0 +1,259 @@
+extends ../layouts/header
+block content
+    //
+      ==================================================
+      Global Page Section Start
+      ==================================================
+    section.global-page-header
+      .container
+        .row
+          .col-md-12
+            .block
+              h2 Service
+              |                             
+              ol.breadcrumb
+                li
+                  a(href='index')
+                    i.ion-ios-home
+                    |                                         Home
+                |                                 
+                li.active Service
+    // /#Page header
+    //
+      ==================================================
+      Service Page Section  Start
+      ==================================================
+    section#service-page.pages.service-page
+      .container
+        .row
+          .col-md-6
+            .block
+              h2.subtitle.wow.fadeInUp.animated(data-wow-delay='.3s', data-wow-duration='500ms') What We Love To Do
+              |                             
+              p.subtitle-des.wow.fadeInUp.animated(data-wow-delay='.5s', data-wow-duration='500ms')
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro recusandae non quibusdam iure adipisci.
+              |                             
+              .row.service-parts
+                .col-md-6
+                  .block.wow.fadeInUp.animated(data-wow-duration='400ms', data-wow-delay='600ms')
+                    i.ion-ios-paper-outline
+                    |                                         
+                    h4 BRANDING
+                    |                                         
+                    p
+                      | Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.
+                |                                 
+                .col-md-6
+                  .block.wow.fadeInUp.animated(data-wow-duration='400ms', data-wow-delay='800ms')
+                    i.ion-ios-pint-outline
+                    |                                         
+                    h4 DESIGN
+                    |                                         
+                    p
+                      | Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.
+                |                                 
+                .col-md-6
+                  .block.wow.fadeInUp.animated(data-wow-duration='400ms', data-wow-delay='1s')
+                    i.ion-ios-paper-outline
+                    |                                         
+                    h4 DEVELOPMENT
+                    |                                         
+                    p
+                      | Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.
+                |                                 
+                .col-md-6
+                  .block.wow.fadeInUp.animated(data-wow-duration='400ms', data-wow-delay='1.1s')
+                    i.ion-ios-paper-outline
+                    |                                         
+                    h4 THEMEING
+                    |                                         
+                    p
+                      | Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.
+          |                     
+          .col-md-6
+            .block
+              img.img-responsive(src='images/team.jpg', alt='')
+    //
+      ==================================================
+      Works Section Start
+      ==================================================
+    section.works.service-page
+      .container
+        h2.subtitle.wow.fadeInUp.animated(data-wow-delay='.3s', data-wow-duration='500ms') Some Of Our Features Works
+        |                     
+        p.subtitle-des.wow.fadeInUp.animated(data-wow-delay='.5s', data-wow-duration='500ms')
+          | Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere 
+          br
+          |  tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+        |                 
+        .row
+          .col-sm-3
+            figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='0ms')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-1.jpg', alt='this is a title')
+                |                                 
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-1.jpg') Demo
+                    |         
+                    |                                         
+                    a(target='_blank', href='') Details
+              |                             
+              figcaption
+                h4
+                  a(href='#')
+                    | Dew Drop
+                |                                 
+                p
+                  | Redesigne UI Concept
+          |                     
+          .col-sm-3
+            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-2.jpg', alt='this is a title')
+                |                                 
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-2.jpg') Demo
+                    |         
+                    |                                         
+                    a(target='_blank', href='') Details
+              |                             
+              figcaption
+                h4
+                  a(href='#')
+                    | Bottle Mockup
+                |                                 
+                p
+                  | Lorem ipsum dolor sit.
+          |                     
+          .col-sm-3
+            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-3.jpg', alt='')
+                |                                 
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-3.jpg') Demo
+                    |         
+                    |                                         
+                    a(target='_blank', href='') Details
+              |                             
+              figcaption
+                h4
+                  a(href='#')
+                    | Table Design
+                |                                 
+                p
+                  | Lorem ipsum dolor sit amet.
+          |                     
+          .col-sm-3
+            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='600ms')
+              .img-wrapper
+                img.img-responsive(src='images/portfolio/item-4.jpg', alt='')
+                |                                 
+                .overlay
+                  .buttons
+                    a.fancybox(rel='gallery', href='images/portfolio/item-4.jpg') Demo
+                    |         
+                    |                                         
+                    a(target='_blank', href='') Details
+              |                             
+              figcaption
+                h4
+                  a(href='#')
+                    | Make Up elements
+                |                                 
+                p
+                  | Lorem ipsum dolor.
+    //
+      ==================================================
+      Clients Section Start
+      ==================================================
+    section#clients
+      .container
+        .row
+          .col-md-12
+            h2.subtitle.text-center.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='.3s') Our Happy Clinets
+            |                         
+            p.subtitle-des.text-center.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='.5s') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.
+            |                         
+            #clients-logo.owl-carousel
+              div
+                img(src='images/clients/logo-1.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-2.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-3.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-4.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-5.jpg', alt='')
+              |                              
+              div
+                img(src='images/clients/logo-1.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-2.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-3.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-4.jpg', alt='')
+              |                             
+              div
+                img(src='images/clients/logo-5.jpg', alt='')
+    //
+      ==================================================
+      Call To Action Section Start
+      ==================================================
+    section#call-to-action
+      .container
+        .row
+          .col-md-12
+            .block
+              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='500ms')
+                | SO WHAT YOU THINK ?
+                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='500ms')
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+                  br
+                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
+                |                             
+                a.btn.btn-default.btn-contact.wow.fadeInDown(href='contact', data-wow-delay='.7s', data-wow-duration='500ms') Contact With Me
+    //
+      ==================================================
+      Footer Section Start
+      ==================================================
+    footer#footer
+      .container
+        .col-md-8
+          p.copyright
+            | Copyright: 
+            span 2015
+            |  . Design and Developed by 
+            a(href='http://www.Themefisher.com') Themefisher
+        |                 
+        .col-md-4
+          // Social Media
+          ul.social
+            li
+              a.Facebook(href='#')
+                i.ion-social-facebook
+            |                         
+            li
+              a.Twitter(href='#')
+                i.ion-social-twitter
+            |                         
+            li
+              a.Linkedin(href='#')
+                i.ion-social-linkedin
+            |                         
+            li
+              a.Google.Plus(href='#')
+                i.ion-social-googleplus
+    // /#footer

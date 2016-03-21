@@ -4,6 +4,7 @@ require('dotenv').load();
 
 // Require keystone
 var keystone = require('keystone');
+var ejs = require('ejs');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -18,12 +19,17 @@ keystone.init({
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
-	'view engine': 'jade',
 	
+	'view engine': 'jade',
+	//uncomment this when using html
+	//'view engine': 'html',
+	//'custom engine': ejs.__express,
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'User'
+	'user model': 'User',
+	'cookie secret': '123456789'
 
 });
 
@@ -50,7 +56,7 @@ keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
-	'galleries': 'galleries',
+	// 'galleries': 'galleries',
 	'enquiries': 'enquiries',
 	'users': 'users'
 });

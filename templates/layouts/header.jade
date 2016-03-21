@@ -1,0 +1,120 @@
+extends ../layouts/head
+block header
+  body
+    nav.navbar.navbar-default.navbar-fixed-top#top-bar.animated-header
+            .container
+                // Brand and toggle get grouped for better mobile display
+                .navbar-header
+                    button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="index")
+                        img.navbar-brand(src="images/logo.png")
+                // Collect the nav links, forms, and other content for toggling
+                #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li.hidden
+                            a(href="index")
+                        li
+                            a.page-scroll(href="service") 工艺
+                        li
+                            a.page-scroll(href="gallery") 款式
+                        li
+                            a.page-scroll(href="about") 关于我们
+                        li.dropdown
+                            a.dropdown-toggle(href='#', data-toggle='dropdown')
+                                | Pages 
+                                span.caret
+                            |                                 
+                            .dropdown-menu
+                                ul
+                                    li
+                                        a(href='404') 404 Page
+                                    |                                         
+                                    li
+                                        a(href='gallery') Gallery
+                        li.dropdown
+                            a.dropdown-toggle(href='#', data-toggle='dropdown')
+                              | Blog 
+                              span.caret
+                            |                                 
+                            .dropdown-menu
+                              ul
+                                li
+                                  a(href='blog-fullwidth') Blog Full
+                                |                                         
+                                li
+                                  a(href='blog-left-sidebar') Blog Left sidebar
+                                |                                         
+                                li
+                                  a(href='blog-right-sidebar') Blog Right sidebar
+ 
+                        li
+                            a.page-scroll(href="contact") 联系我们
+
+
+
+    //- nav.navbar.navbar-default.navbar-fixed-top.animated-header#top-bar
+    //-   .container
+    //-     .navbar-header
+    //-       // responsive nav button
+    //-       button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+    //-         span.sr-only Toggle navigation
+    //-         |                     
+    //-         span.icon-bar
+    //-         |                     
+    //-         span.icon-bar
+    //-         |                     
+    //-         span.icon-bar
+    //-       // /responsive nav button
+    //-       // logo
+    //-       .navbar-brand
+    //-         a(href='index')
+    //-           img(src='images/logo.png', alt='')
+    //-       // /logo
+    //-     // main menu
+    //-     nav.collapse.navbar-collapse.navbar-right(role='navigation')
+    //-       .main-menu
+    //-         ul.nav.navbar-nav.navbar-right
+    //-           li
+    //-             a(href='/') Home
+    //-           |                             
+    //-           li
+    //-             a(href='about') About
+    //-           |                             
+    //-           li
+    //-             a(href='service') Service
+    //-           |                             
+    //-           li.dropdown
+    //-             a.dropdown-toggle(href='#', data-toggle='dropdown')
+    //-               | Pages 
+    //-               span.caret
+    //-             |                                 
+    //-             .dropdown-menu
+    //-               ul
+    //-                 li
+    //-                   a(href='404') 404 Page
+    //-                 |                                         
+    //-                 li
+    //-                   a(href='gallery') Gallery
+    //-           |                             
+    //-           li.dropdown
+    //-             a.dropdown-toggle(href='#', data-toggle='dropdown')
+    //-               | Blog 
+    //-               span.caret
+    //-             |                                 
+    //-             .dropdown-menu
+    //-               ul
+    //-                 li
+    //-                   a(href='blog-fullwidth') Blog Full
+    //-                 |                                         
+    //-                 li
+    //-                   a(href='blog-left-sidebar') Blog Left sidebar
+    //-                 |                                         
+    //-                 li
+    //-                   a(href='blog-right-sidebar') Blog Right sidebar
+    //-           |                             
+    //-           li
+    //-             a(href='contact') Contact

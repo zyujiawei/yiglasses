@@ -10,6 +10,6 @@ exports = module.exports = function(req, res) {
 	locals.section = 'home';
 	
 	// Render the view
-	view.render('contact');
+	view.render('blog-left-sidebar');
 	
 };
