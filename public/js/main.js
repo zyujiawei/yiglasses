@@ -61,10 +61,12 @@ $(document).ready(function(){
 
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 20) {
+            //console.log("hi larger"+ $(window).scrollTop() +" " +$(window).innerHeight());
             $(".navbar-brand a").css("color","#fff");
             $("#top-bar").removeClass("animated-header");
         } else {
+            //console.log("hi smaller"+ $(window).scrollTop() +" " +$(window).innerHeight());
             $(".navbar-brand a").css("color","inherit");
             $("#top-bar").addClass("animated-header");
         }

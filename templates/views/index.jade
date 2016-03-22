@@ -12,54 +12,69 @@ block content
               // Slider
               section.cd-intro
                 h1.wow.fadeInUp.animated.cd-headline.slide(data-wow-delay='.4s')
-                  span HI, MY NAME IS JONATHON &amp; I AM A
+                  span Hi, 我是诣眼镜 &amp; 我是
                   br
                   |                                 
                   span.cd-words-wrapper
-                    b.is-visible DESIGNER
+                    b.is-visible 潮人
                     |                                     
-                    b DEVELOPER
+                    b 近视眼
                     |                                     
-                    b FATHER
+                    b 设计师
+                    |                                     
+                    b 音乐人
+                    |                                     
+                    b 年轻人
+                    |                                     
+                    b 模特
+                    |                                     
+                    b 购物狂                                                            
               // cd-intro
               // /.slider
               h2.wow.fadeInUp.animated(data-wow-delay='.6s')
-                | With 10 years experience, I&apos;ve occupied many roles including digital design director,
+                | 街对面橱窗玻璃上倒映的我
                 br
-                |  web designer and developer. This site showcases some of my work.
+                |  真好看。
               |                                 
-              a.btn-lines.dark.light.wow.fadeInUp.animated.smooth-scroll.btn.btn-default.btn-green(data-wow-delay='.9s', href='#works', data-section='#works') View Works
+              a.btn-lines.dark.light.wow.fadeInUp.animated.smooth-scroll.btn.btn-default.btn-green(data-wow-delay='.9s', href='#works', data-section='#works') 我们的新品
     // /#main-slider
     //
       ==================================================
       Slider Section Start
       ==================================================
-    section#about
-      .container
+      
+    section#new-item
+      .container-fluid
         .row
-          .col-md-6.col-sm-6
-            .block.wow.fadeInLeft(data-wow-delay='.3s', data-wow-duration='500ms')
-              h2
-                | ABOUT ME
-              |                                 
-              p
-                | Hello, I&rsquo;m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-              |                                 
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
-          |                         
-          .col-md-6.col-sm-6
-            .block.wow.fadeInRight(data-wow-delay='.3s', data-wow-duration='500ms')
-              img(src='images/about/about.jpg', alt='')
+          .col-md-12.col-sm-12
+            div(data-wow-delay='.3s', data-wow-duration='500ms')
+              img.img-responsive(src="images/fullsize/new-glasses.jpg")
+    //- section#about
+    //-   .container
+    //-     .row
+    //-       .col-md-6.col-sm-6
+    //-         .block.wow.fadeInLeft(data-wow-delay='.3s', data-wow-duration='500ms')
+    //-           h2
+    //-             | ABOUT ME
+    //-           |                                 
+    //-           p
+    //-             | Hello, I&rsquo;m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
+    //-           |                                 
+    //-           p
+    //-             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
+    //-       |                         
+    //-       .col-md-6.col-sm-6
+    //-         .block.wow.fadeInRight(data-wow-delay='.3s', data-wow-duration='500ms')
+    //-           img(src='images/about/about.jpg', alt='')
     // /#about
     //
       ==================================================
       Portfolio Section Start
       ==================================================
     section#works.works
-      .container
+      .container-fluid
         .section-heading
-          h1.title.wow.fadeInDown(data-wow-delay='.3s') Latest Works
+          h1.title.wow.fadeInDown(data-wow-delay='.3s') 当季新款
           |                         
           p.wow.fadeInDown(data-wow-delay='.5s')
             | Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere 
@@ -70,13 +85,8 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='0ms')
               .img-wrapper
-                img.img-responsive(src='images/portfolio/item-1.jpg', alt='this is a title')
-                |                                     
-                .overlay
-                  .buttons
-                    a.fancybox(rel='gallery', href='images/portfolio/item-1.jpg') Demo
-                    |                                             
-                    a(target='_blank', href='single-portfolio') Details
+                a(href="#portfolioModal1", data-toggle="modal")
+                  img.img-responsive(src='images/productimgs/1287C19/1.jpg', alt='this is a title')
               |                                 
               figcaption
                 h4
@@ -87,99 +97,74 @@ block content
                   | Redesigne UI Concept
           |                         
           .col-sm-4.col-xs-12
-            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+            figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='300ms')
               .img-wrapper
-                img.img-responsive(src='images/portfolio/item-2.jpg', alt='this is a title')
-                |                                     
-                .overlay
-                  .buttons
-                    a.fancybox(rel='gallery', href='images/portfolio/item-2.jpg') Demo
-                    |                                             
-                    a(target='_blank', href='single-portfolio') Details
+                a(href="#portfolioModal2", data-toggle="modal")
+                  img.img-responsive(src='images/productimgs/3016A3/1.jpg', alt='this is a title')
               |                                 
               figcaption
                 h4
                   a(href='#')
-                    | Bottle Mockup
+                    | Dew Drop
                 |                                 
                 p
-                  | Lorem ipsum dolor sit.
+                  | Redesigne UI Concept
           |                         
           .col-sm-4.col-xs-12
-            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+            figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='600ms')
               .img-wrapper
-                img.img-responsive(src='images/portfolio/item-3.jpg', alt='')
-                |                                     
-                .overlay
-                  .buttons
-                    a.fancybox(rel='gallery', href='images/portfolio/item-3.jpg') Demo
-                    |                                             
-                    a(target='_blank', href='single-portfolio') Details
+                a(href="#portfolioModal3", data-toggle="modal")
+                  img.img-responsive(src='images/productimgs/5156C19/1.jpg', alt='this is a title')
               |                                 
               figcaption
                 h4
                   a(href='#')
-                    | Table Design
+                    | Dew Drop
                 |                                 
                 p
-                  | Lorem ipsum dolor sit amet.
+                  | Redesigne UI Concept
           |                         
           .col-sm-4.col-xs-12
-            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='600ms')
+            figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='900ms')
               .img-wrapper
-                img.img-responsive(src='images/portfolio/item-4.jpg', alt='')
-                |                                     
-                .overlay
-                  .buttons
-                    a.fancybox(rel='gallery', href='images/portfolio/item-4.jpg') Demo
-                    |                                             
-                    a(target='_blank', href='single-portfolio') Details
+                a(href="#portfolioModal4", data-toggle="modal")
+                  img.img-responsive(src='images/productimgs/5221/1.jpg', alt='this is a title')
               |                                 
               figcaption
                 h4
                   a(href='#')
-                    | Make Up elements
+                    | Dew Drop
                 |                                 
                 p
-                  | Lorem ipsum dolor.
+                  | Redesigne UI Concept
           |                         
           .col-sm-4.col-xs-12
-            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='900ms')
+            figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='1200ms')
               .img-wrapper
-                img.img-responsive(src='images/portfolio/item-5.jpg', alt='')
-                |                                     
-                .overlay
-                  .buttons
-                    a.fancybox(rel='gallery', href='images/portfolio/item-5.jpg') Demo
-                    |                                             
-                    a(target='_blank', href='single-portfolio') Details
+                a(href="#portfolioModal5", data-toggle="modal")
+                  img.img-responsive(src='images/productimgs/5225/1.jpg', alt='this is a title')
               |                                 
               figcaption
                 h4
                   a(href='#')
-                    | Shoping Bag Concept
+                    | Dew Drop
                 |                                 
                 p
-                  | Lorem ipsum dolor.
+                  | Redesigne UI Concept
           |                         
           .col-sm-4.col-xs-12
-            figure.wow.fadeInLeft.animated(data-wow-duration='500ms', data-wow-delay='1200ms')
+            figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='1500ms')
               .img-wrapper
-                img.img-responsive(src='images/portfolio/item-6.jpg', alt='')
-                |                                     
-                .overlay
-                  .buttons
-                    a.fancybox(rel='gallery', href='images/portfolio/item-6.jpg') Demo
-                    |                                             
-                    a(target='_blank', href='single-portfolio') Details
+                a(href="#portfolioModal6", data-toggle="modal")
+                  img.img-responsive(src='images/productimgs/5353C19/1.jpg', alt='this is a title')
               |                                 
               figcaption
                 h4
                   a(href='#')
-                    | Caramel Bottle
+                    | Dew Drop
                 |                                 
                 p
-                  | Lorem ipsum dolor.
+                  | Redesigne UI Concept
     // #works
     //
       ==================================================
@@ -311,3 +296,7 @@ block content
               a.Google.Plus(href='http://wwww.fb.com/themefisher')
                 i.ion-social-googleplus
     // /#footer
+
+    // new product modals
+
+    include ../layouts/newproductmodals.jade
