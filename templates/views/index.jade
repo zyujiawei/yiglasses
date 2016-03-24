@@ -18,7 +18,7 @@ block content
                   span.cd-words-wrapper
                     b.is-visible 潮人
                     |                                     
-                    b 近视眼
+                    b 新生代
                     |                                     
                     b 设计师
                     |                                     
@@ -28,7 +28,13 @@ block content
                     |                                     
                     b 模特
                     |                                     
-                    b 购物狂                                                            
+                    b 书呆子
+                    |                                     
+                    b 程序员
+                    |                                     
+                    b 型男
+                    |                                     
+                    b 美女                                                            
               // cd-intro
               // /.slider
               h2.wow.fadeInUp.animated(data-wow-delay='.6s')
@@ -36,7 +42,7 @@ block content
                 br
                 |  真好看。
               |                                 
-              a.btn-lines.dark.light.wow.fadeInUp.animated.smooth-scroll.btn.btn-default.btn-green(data-wow-delay='.9s', href='#works', data-section='#works') 我们的新品
+              //- a.btn-lines.dark.light.wow.fadeInUp.animated.smooth-scroll.btn.btn-default.btn-green(data-wow-delay='.9s', href='#works', data-section='#works') 我们的新品
     // /#main-slider
     //
       ==================================================
@@ -49,24 +55,7 @@ block content
           .col-md-12.col-sm-12
             div(data-wow-delay='.3s', data-wow-duration='500ms')
               img.img-responsive(src="images/fullsize/new-glasses.jpg")
-    //- section#about
-    //-   .container
-    //-     .row
-    //-       .col-md-6.col-sm-6
-    //-         .block.wow.fadeInLeft(data-wow-delay='.3s', data-wow-duration='500ms')
-    //-           h2
-    //-             | ABOUT ME
-    //-           |                                 
-    //-           p
-    //-             | Hello, I&rsquo;m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-    //-           |                                 
-    //-           p
-    //-             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
-    //-       |                         
-    //-       .col-md-6.col-sm-6
-    //-         .block.wow.fadeInRight(data-wow-delay='.3s', data-wow-duration='500ms')
-    //-           img(src='images/about/about.jpg', alt='')
-    // /#about
+
     //
       ==================================================
       Portfolio Section Start
@@ -75,11 +64,11 @@ block content
       .container-fluid
         .section-heading
           h1.title.wow.fadeInDown(data-wow-delay='.3s') 当季新款
-          |                         
-          p.wow.fadeInDown(data-wow-delay='.5s')
-            | Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere 
-            br
-            |  tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+          //- |                         
+          //- p.wow.fadeInDown(data-wow-delay='.5s')
+          //-   | Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere 
+          //-   br
+          //-   |  tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
         |                     
         .row
           .col-sm-4.col-xs-12
@@ -166,137 +155,116 @@ block content
                 p
                   | Redesigne UI Concept
     // #works
+
+    //
+      ==================================================
+      About Section Start
+      ==================================================
+    section#about
+      .container
+        .row
+          |                         
+          .col-md-6.col-sm-6
+            .block.wow.fadeInRight(data-wow-delay='.3s', data-wow-duration='500ms')
+              img(src='images/about/about.jpg', alt='')
+          .col-md-6.col-sm-6
+            .block.wow.fadeInLeft(data-wow-delay='.3s', data-wow-duration='500ms')
+              h2
+                | 属于你的设计
+              |                                 
+              p
+                | 作为爱美的新一代，为什么不能选自己喜欢的设计呢？诣眼镜的下一款新品，由你来决定。在这里为你喜欢的款式投上一票，我们将在投票截止后选出票数最高的款式，进行进一步细节设计和生产。如果你投票眼镜最终生产，还能凭借优惠码打折呢~
+              a.btn.btn-default.btn-detail.wow.fadeInLeft(href='contact', data-wow-delay='.3s', data-wow-duration='500ms') 详情
+
+
+    // /#about
+
+
     //
       ==================================================
       Portfolio Section Start
       ==================================================
-    section#feature
-      .container
-        .section-heading
-          h1.title.wow.fadeInDown(data-wow-delay='.3s') Offer From Me
-          |                         
-          p.wow.fadeInDown(data-wow-delay='.5s')
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
-            br
-            |  quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
-        |                     
-        .row
-          .col-md-4.col-lg-4.col-xs-12
-            .media.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='300ms')
-              .media-left
-                .icon
-                  i.ion-ios-flask-outline
-              |                                 
-              .media-body
-                h4.media-heading Media heading
-                |                                     
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
-          |                         
-          .col-md-4.col-lg-4.col-xs-12
-            .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='600ms')
-              .media-left
-                .icon
-                  i.ion-ios-lightbulb-outline
-              |                                 
-              .media-body
-                h4.media-heading Well documented.
-                |                                     
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
-          |                         
-          .col-md-4.col-lg-4.col-xs-12
-            .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='900ms')
-              .media-left
-                .icon
-                  i.ion-ios-lightbulb-outline
-              |                                 
-              .media-body
-                h4.media-heading Well documented.
-                |                                     
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
-          |                         
-          .col-md-4.col-lg-4.col-xs-12
-            .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='1200ms')
-              .media-left
-                .icon
-                  i.ion-ios-americanfootball-outline
-              |                                 
-              .media-body
-                h4.media-heading Free updates
-                |                                     
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
-          |                         
-          .col-md-4.col-lg-4.col-xs-12
-            .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='1500ms')
-              .media-left
-                .icon
-                  i.ion-ios-keypad-outline
-              |                                 
-              .media-body
-                h4.media-heading Solid Support
-                |                                     
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
-          |                         
-          .col-md-4.col-lg-4.col-xs-12
-            .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='1800ms')
-              .media-left
-                .icon
-                  i.ion-ios-barcode-outline
-              |                                 
-              .media-body
-                h4.media-heading Simple Installation
-                |                                     
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+    //- section#feature
+    //-   .container
+    //-     .section-heading
+    //-       h1.title.wow.fadeInDown(data-wow-delay='.3s') Offer From Me
+    //-       |                         
+    //-       p.wow.fadeInDown(data-wow-delay='.5s')
+    //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
+    //-         br
+    //-         |  quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
+    //-     |                     
+    //-     .row
+    //-       .col-md-4.col-lg-4.col-xs-12
+    //-         .media.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+    //-           .media-left
+    //-             .icon
+    //-               i.ion-ios-flask-outline
+    //-           |                                 
+    //-           .media-body
+    //-             h4.media-heading Media heading
+    //-             |                                     
+    //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+    //-       |                         
+    //-       .col-md-4.col-lg-4.col-xs-12
+    //-         .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='600ms')
+    //-           .media-left
+    //-             .icon
+    //-               i.ion-ios-lightbulb-outline
+    //-           |                                 
+    //-           .media-body
+    //-             h4.media-heading Well documented.
+    //-             |                                     
+    //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+    //-       |                         
+    //-       .col-md-4.col-lg-4.col-xs-12
+    //-         .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='900ms')
+    //-           .media-left
+    //-             .icon
+    //-               i.ion-ios-lightbulb-outline
+    //-           |                                 
+    //-           .media-body
+    //-             h4.media-heading Well documented.
+    //-             |                                     
+    //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+    //-       |                         
+    //-       .col-md-4.col-lg-4.col-xs-12
+    //-         .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='1200ms')
+    //-           .media-left
+    //-             .icon
+    //-               i.ion-ios-americanfootball-outline
+    //-           |                                 
+    //-           .media-body
+    //-             h4.media-heading Free updates
+    //-             |                                     
+    //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+    //-       |                         
+    //-       .col-md-4.col-lg-4.col-xs-12
+    //-         .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='1500ms')
+    //-           .media-left
+    //-             .icon
+    //-               i.ion-ios-keypad-outline
+    //-           |                                 
+    //-           .media-body
+    //-             h4.media-heading Solid Support
+    //-             |                                     
+    //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+    //-       |                         
+    //-       .col-md-4.col-lg-4.col-xs-12
+    //-         .media.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='1800ms')
+    //-           .media-left
+    //-             .icon
+    //-               i.ion-ios-barcode-outline
+    //-           |                                 
+    //-           .media-body
+    //-             h4.media-heading Simple Installation
+    //-             |                                     
+    //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
     // /#feature
     //
       ==================================================
       Call To Action Section Start
       ==================================================
-    section#call-to-action
-      .container
-        .row
-          .col-md-12
-            .block
-              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='500ms')
-                | SO WHAT YOU THINK ?
-                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='500ms')
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-                  br
-                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
-                |                                 
-                a.btn.btn-default.btn-contact.wow.fadeInDown(href='contact', data-wow-delay='.7s', data-wow-duration='500ms') Contact With Me
-    //
-      ==================================================
-      Footer Section Start
-      ==================================================
-    footer#footer
-      .container
-        .col-md-8
-          p.copyright
-            | Copyright: 
-            span 2015
-            |  . Design and Developed by 
-            a(href='http://www.Themefisher.com') Themefisher
-        |                     
-        .col-md-4
-          // Social Media
-          ul.social
-            li
-              a.Facebook(href='http://wwww.fb.com/themefisher')
-                i.ion-social-facebook
-            |                             
-            li
-              a.Twitter(href='http://wwww.twitter.com/themefisher')
-                i.ion-social-twitter
-            |                             
-            li
-              a.Linkedin(href='#')
-                i.ion-social-linkedin
-            |                             
-            li
-              a.Google.Plus(href='http://wwww.fb.com/themefisher')
-                i.ion-social-googleplus
-    // /#footer
-
-    // new product modals
+    include ../layouts/calltoaction.jade 
 
     include ../layouts/newproductmodals.jade

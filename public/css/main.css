@@ -43,7 +43,7 @@ a:hover {
 .title {
   font-size: 30px;
   line-height: 1.1;
-  font-weight: 300;
+  font-weight: 600;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -114,7 +114,9 @@ a:hover {
 }
 
 #top-bar {
+  min-width: 300px;
   background: #333;
+  background-size: cover;
   color: #333;
   -webkit-transition: padding .3s;
   -moz-transition: padding .3s;
@@ -162,6 +164,27 @@ a:hover {
 #top-bar .main-menu li a:hover {
   color: #8F7A10;
 }
+#about {
+  padding: 110px 0;
+}
+#about .block {
+  padding: 20px 30px 0 30px;
+}
+#about .block h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#about .block p {
+  color: #727272;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+#about .block img {
+  max-width: 100%;
+}
 .navbar-custom .nav li > a {
   position: relative;
   color: #000;
@@ -180,7 +203,7 @@ a:hover {
   background: url('../images/slider.jpg') no-repeat 50%;
   background-size: cover;
   background-attachment: fixed;
-  padding: 400px 0;
+  padding: 300px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -231,22 +254,22 @@ a:hover {
   border-radius: 0;
 }
 #call-to-action {
-  background: #D8B368;
+  background: #DAD4B9;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
   text-align: center;
   position: relative;
-  color: #fff;
+  color: #333;
 }
 #call-to-action .block {
   position: relative;
   z-index: 99;
-  color: #fff;
+  color: #333;
 }
 #call-to-action .block h2 {
   margin-bottom: 15px;
-  color: #fff;
+  color: #333;
 }
 #call-to-action .block p {
   font-size: 15px;
@@ -256,8 +279,8 @@ a:hover {
 }
 #call-to-action .block .btn-contact {
   background: #fff;
-  border: none;
-  color: #D8B368;
+  border: 2px solid #333;
+  color: #333;
   padding: 16px 35px;
   margin-top: 20px;
   font-size: 12px;
@@ -296,6 +319,21 @@ a:hover {
 }
 #new-item .block img {
   max-width: 100%;
+}
+
+#about{
+  background: #fff
+}
+#about .block .btn-detail {
+  background: #fff;
+  border: 2px solid #333;
+  color: #333;
+  padding: 13px 28px;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 0;
 }
 .works {
   padding: 80px 0;
@@ -589,7 +627,8 @@ ul.social-icons li {
 .global-page-header {
   background-attachment: fixed;
   background-size: cover;
-  padding: 120px 0 25px 0;
+  padding: 150px 0 50px 0;
+  margin-top: -50px;
   position: relative;
   background: #D8B368;
   color: #fff;
@@ -615,6 +654,13 @@ ul.social-icons li {
   position: relative;
   z-index: 99;
   text-align: center;
+}
+#product-page-header{
+  background: url('../images/banner/productpagebanner.jpg') no-repeat;
+  background-size: cover;
+  margin-top: -50px;
+  padding-bottom: 50px;
+  padding-top: 150px;
 }
 #product-showcase-banner {
   padding-top: 160px;
@@ -1031,7 +1077,7 @@ article {
   font-size: 12px;
 }
 .gallery {
-  padding: 100px;
+  padding: 10px;
 }
 .gallery figure .buttons {
   left: 40%;
@@ -1170,4 +1216,10 @@ article {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+
+/*Extra style*/
+a.btn{
+  font-weight: 600;
 }

@@ -4,20 +4,13 @@ block content
       ==================================================
       Global Page Section Start
       ==================================================
-    section.global-page-header
+    section#product-page-header.global-page-header
       .container
         .row
           .col-md-12
             .block
-              h2 Gallery
-              |                             
-              ol.breadcrumb
-                li
-                  a(href='index')
-                    i.ion-ios-home
-                    |                                         Home
-                |                                 
-                li.active Gallery
+              h2 光学眼镜
+
     // /#Page header
     section#gallery.gallery
       .container
@@ -79,48 +72,4 @@ block content
       ==================================================
       Call To Action Section Start
       ==================================================
-    section#call-to-action
-      .container
-        .row
-          .col-md-12
-            .block
-              h2.title.wow.fadeInDown(data-wow-delay='.3s', data-wow-duration='500ms')
-                | SO WHAT YOU THINK ?
-                p.wow.fadeInDown(data-wow-delay='.5s', data-wow-duration='500ms')
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-                  br
-                  | possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.
-                |                                 
-                a.btn.btn-default.btn-contact.wow.fadeInDown(href='#', data-wow-delay='.7s', data-wow-duration='500ms') Contact With Me
-    //
-      ==================================================
-      Footer Section Start
-      ==================================================
-    footer#footer
-      .container
-        .col-md-8
-          p.copyright
-            | Copyright: 
-            span 2015
-            |  . Design and Developed by 
-            a(href='http://www.Themefisher.com') Themefisher
-        |                     
-        .col-md-4
-          // Social Media
-          ul.social
-            li
-              a.Facebook(href='#')
-                i.ion-social-facebook
-            |                             
-            li
-              a.Twitter(href='#')
-                i.ion-social-twitter
-            |                             
-            li
-              a.Linkedin(href='#')
-                i.ion-social-linkedin
-            |                             
-            li
-              a.Google.Plus(href='#')
-                i.ion-social-googleplus
-    // /#footer
+    include ../layouts/newproductmodals.jade
