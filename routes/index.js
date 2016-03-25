@@ -28,7 +28,8 @@ keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
 var routes = {
-	views: importRoutes('./views')
+	views: importRoutes('./views'),
+	qhyc: importRoutes('./qianhaiyuncheng')
 };
 
 // Setup Route Bindings
@@ -52,7 +53,7 @@ exports = module.exports = function(app) {
 	app.get('/single-portfolio', routes.views.singleportfolio);
 	app.get('/single-post', routes.views.singlepost);
 	app.get('/404', routes.views.error404);
-	
+	app.get('/qhyc',routes.qhyc.index)
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
 	
