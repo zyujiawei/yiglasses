@@ -47,13 +47,14 @@ exports = module.exports = function(app) {
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 	app.get('/about', routes.views.about);
+	app.get('/design', routes.views.design);
 	app.get('/blog-fullwidth', routes.views.blogfullwidth);
 	app.get('/blog-left-sidebar', routes.views.blogleftsidebar);
 	app.get('/blog-right-sidebar', routes.views.blogrightsidebar);
 	app.get('/single-portfolio', routes.views.singleportfolio);
 	app.get('/single-post', routes.views.singlepost);
-	app.get('/404', routes.views.error404);
 	app.get('/qhyc',routes.qhyc.index)
+	app.get('*', routes.views.error404);
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
 	
