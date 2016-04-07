@@ -19,7 +19,7 @@ keystone.init({
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
-	
+	'port':80,
 	'view engine': 'jade',
 	//uncomment this when using html
 	//'view engine': 'html',
