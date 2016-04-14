@@ -947,25 +947,25 @@ ul.social-icons li {
 .team-member .social-icons .facebook {
   padding: 4px 12px;
 }
-.new-item-feature {
+.about-feature {
   margin-top: 50px;
 }
-.new-item-feature .block {
+.about-feature .block {
   color: #fff;
   width: 33.33%;
   padding: 5%;
   float: left;
 }
-.new-item-feature .block p {
+.about-feature .block p {
   font-weight: 300;
 }
-.new-item-feature .new-item-feature-1 {
+.about-feature .about-feature-1 {
   background: #D8B368;
 }
-.new-item-feature .new-item-feature-2 {
+.about-feature .about-feature-2 {
   background: #00B0C7;
 }
-.new-item-feature .new-item-feature-3 {
+.about-feature .about-feature-3 {
   background: #00A6BB;
 }
 #blog-full-width {
