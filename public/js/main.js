@@ -79,34 +79,44 @@ $(document).ready(function(){
         items : 5,
         autoplay: true,
 
-    })
+    });
+
+    $('#contact-form').on('submit',function() {
+        $.post("sendmail", {
+       'name':$("#name").val(),
+       'email':$("#email").val(),
+       'subject':$("#subject").val(),
+       'message':$("#message").val()
+        },function(){
+            $('#sendModal').modal('show');
+        });
+        return false; // 阻止表单自动提交事件
+    });
 
 });
-
-
 
 // fancybox
-$(".fancybox").fancybox({
-    padding: 0,
+// $(".fancybox").fancybox({
+//     padding: 0,
 
-    openEffect : 'elastic',
-    openSpeed  : 450,
+//     openEffect : 'elastic',
+//     openSpeed  : 450,
 
-    closeEffect : 'elastic',
-    closeSpeed  : 350,
+//     closeEffect : 'elastic',
+//     closeSpeed  : 350,
 
-    closeClick : true,
-    helpers : {
-        title : { 
-            type: 'inside' 
-        },
-        overlay : {
-            css : {
-                'background' : 'rgba(0,0,0,0.8)'
-            }
-        }
-    }
-});
+//     closeClick : true,
+//     helpers : {
+//         title : { 
+//             type: 'inside' 
+//         },
+//         overlay : {
+//             css : {
+//                 'background' : 'rgba(0,0,0,0.8)'
+//             }
+//         }
+//     }
+// });
 
 
 

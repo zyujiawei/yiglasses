@@ -1,6 +1,6 @@
-@import url(http://fonts.useso.com/css?family=Roboto:400,300,100,500,700);
-@import url(http://fonts.useso.com/css?family=Roboto+Condensed:400,300,700);
-@import url(http://fonts.useso.com/css?family=Glegoo);
+@import url(http://fonts.lug.ustc.edu.cn/css?family=Roboto:400,300,100,500,700);
+@import url(http://fonts.lug.ustc.edu.cn/css?family=Roboto+Condensed:400,300,700);
+@import url(http://fonts.lug.ustc.edu.cn/css?family=Glegoo);
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -654,13 +654,17 @@ ul.social-icons li {
   position: relative;
   z-index: 99;
   text-align: center;
+/*  margin-top: -50px;
+  padding-bottom: 50px;
+  padding-top: 150px;*/
+}
+#contact-page-header{
+  background: url('../images/banner/contactpagebanner.jpg') no-repeat;
+  background-size: cover;
 }
 #product-page-header{
   background: url('../images/banner/productpagebanner.jpg') no-repeat;
   background-size: cover;
-  margin-top: -50px;
-  padding-bottom: 50px;
-  padding-top: 150px;
 }
 #product-showcase-banner {
   padding-top: 160px;

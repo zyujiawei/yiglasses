@@ -53,8 +53,11 @@ exports = module.exports = function(app) {
 	app.get('/blog-right-sidebar', routes.views.blogrightsidebar);
 	app.get('/single-portfolio', routes.views.singleportfolio);
 	app.get('/single-post', routes.views.singlepost);
+	app.get('/map', routes.views.map);
+	app.post('/sendmail',routes.views.sendmail);
 	app.get('/qhyc',routes.qhyc.index)
 	app.get('*', routes.views.error404);
+
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
 	
