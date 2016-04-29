@@ -1,5 +1,5 @@
-//New Product 1 Modal  
-#galleryModal1.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//1287C19 Modal  
+#1287C19Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -10,29 +10,32 @@
           .modal-body
             // Project Details Go Here
             h2 Brando
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/1287C19/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/1287C19/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/1287C19/3.jpg", alt="")
-            p
-              | Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-            p
-              strong Want these icons in this portfolio item sample?
-              | You can download 60 of them for free, courtesy of
-              a(href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc") RoundIcons.com
-              | , or you can purchase the 1500 icon set
-              a(href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc") here
-              | .
-            ul.list-inline
-              li Date: July 2014
-              li Client: Round Icons
-              li Category: Graphic Design
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/1287C19/1287C19_'+n+++'.jpg">'
+            //- img.img-responsive.img-centered(src="images/productimgs/1287C19/1.jpg", alt="")
+            //- img.img-responsive.img-centered(src="images/productimgs/1287C19/2.jpg", alt="")
+            //- img.img-responsive.img-centered(src="images/productimgs/1287C19/3.jpg", alt="")
+            //- p
+            //-   | Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+            //- p
+            //-   strong Want these icons in this portfolio item sample?
+            //-   | You can download 60 of them for free, courtesy of
+            //-   a(href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc") RoundIcons.com
+            //-   | , or you can purchase the 1500 icon set
+            //-   a(href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc") here
+            //-   | .
+            //- ul.list-inline
+            //-   li Date: July 2014
+            //-   li Client: Round Icons
+            //-   li Category: Graphic Design
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.33.ZWMvsS&id=529753524869", target="_blank")
+              i.fa.fa-shopping-cart
+              |  购买链接
 
-//New Product 2 Modal              
-#galleryModal2.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//3016A3 Modal              
+#3016A3Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -42,23 +45,16 @@
         .col-lg-8.col-lg-offset-2
           .modal-body
             h2 Cage
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/3016A3/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/3016A3/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/3016A3/3.jpg", alt="")
-            p
-              a(href="http://designmodo.com/startup/?u=787") Startup Framework
-              | is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.
-            p
-              | You can preview Startup Framework
-              a(href="http://designmodo.com/startup/?u=787") here
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/3016A3/3016A3_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.48.ZWMvsS&id=529554816622", target="_blank")
+              i.fa.fa-shopping-cart
+              |  购买链接
 
-//New Product 3 Modal  
-#galleryModal3.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//5156C19 Modal  
+#5156C19Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -69,24 +65,69 @@
           .modal-body
             // Project Details Go Here
             h2 Pacino
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5156C19/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5156C19/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5156C19/3.jpg", alt="")
-            p
-              | Treehouse is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/5156C19/5156C19_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.48.ZWMvsS&id=529554816622", target="_blank")
+              i.fa.fa-shopping-cart
+              |  购买链接
 
-//New Product 4 Modal  
-#galleryModal4.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//- //5213黑 Modal  
+//- #5213黑Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//-   .modal-content
+//-     .close-modal(data-dismiss="modal")
+//-       .lr
+//-         .rl
+//-     .container
+//-       .row
+//-         .col-lg-8.col-lg-offset-2
+//-           .modal-body
+//-             h2 Jolie
+//-             - var n = 1
+//-             ul
+//-               while n < 14
+//-                 li!='<img  src="images/productimgs/5213黑/5213_'+n+++'.jpg">'
+//-             a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.48.ZWMvsS&id=529554816622", target="_blank")
+//-               i.fa.fa-shopping-cart
+//-               |  购买链接
+
+//- //5220白 Modal  
+//- #5220白Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//-   .modal-content
+//-     .close-modal(data-dismiss="modal")
+//-       .lr
+//-         .rl
+//-     .container
+//-       .row
+//-         .col-lg-8.col-lg-offset-2
+//-           .modal-body
+//-             h2 Scarlett
+//-             - var n = 1
+//-             ul
+//-               while n < 14
+//-                 li!='<img  src="images/productimgs/5220白/5213_'+n+++'.jpg">'
+//-             a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.48.ZWMvsS&id=529554816622", target="_blank")
+
+//- //5221花 Modal  
+//- #5221花Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//-   .modal-content
+//-     .close-modal(data-dismiss="modal")
+//-       .lr
+//-         .rl
+//-     .container
+//-       .row
+//-         .col-lg-8.col-lg-offset-2
+//-           .modal-body
+//-             h2 Lawrence
+//-             - var n = 1
+//-             ul
+//-               while n < 14
+//-                 li!='<img  src="images/productimgs/5221花/5221_'+n+++'.jpg">'
+//-             a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.48.ZWMvsS&id=529554816622", target="_blank")
+
+//5221金 Modal  
+#5221Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -95,82 +136,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
-            h2 Jolie
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5213黑/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5213黑/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5213黑/3.jpg", alt="")
-            p
-              | Start Bootstrap"s Agency theme is based on Golden, a free PSD website template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project
-
-//New Product 5 Modal  
-#galleryModal5.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
-  .modal-content
-    .close-modal(data-dismiss="modal")
-      .lr
-        .rl
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .modal-body
-            // Project Details Go Here
-            h2 Scarlett
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5220白/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5220白/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5220白/3.jpg", alt="")
-            p
-              | Escape is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project
-
-//New Product 6 Modal  
-#galleryModal6.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
-  .modal-content
-    .close-modal(data-dismiss="modal")
-      .lr
-        .rl
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .modal-body
-            // Project Details Go Here
             h2 Lawrence
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5221花/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5221花/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5221花/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/5221金/5221_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.24.ZWMvsS&id=530164615350", target="_blank")    
 
-//New Product 7 Modal  
-#galleryModal7.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//5225 Modal  
+#5225Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -179,26 +153,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
-            h2 Lawrence
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5221金/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5221金/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5221金/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project     
+            h2 Alba
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/5225/5225_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.27.KgCE9q&id=529149118272", target="_blank")                          
 
-//New Product 8 Modal  
-#galleryModal8.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//5353C19 Modal  
+#5353C19Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -207,54 +170,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
-            h2 Lawrence
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5225/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5225/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5225/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project                         
-
-//New Product 9 Modal  
-#galleryModal9.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
-  .modal-content
-    .close-modal(data-dismiss="modal")
-      .lr
-        .rl
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .modal-body
-            // Project Details Go Here
             h2 Spacey
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/5353C19/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5353C19/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/5353C19/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project          
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/5353C19/5353C19_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.45.KgCE9q&id=529668846336", target="_blank")
 
-//New Product 10 Modal  
-#galleryModal10.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//73578A5 Modal  
+#73578A5Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -263,26 +187,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
             h2 Downey
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/73578A5/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/73578A5/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/73578A5/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project     
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/73578A5/73578A5_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.45.KgCE9q&id=529668846336", target="_blank")
 
-//New Product 11 Modal  
-#galleryModal11.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//73758A16 Modal  
+#73758A16Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -291,26 +204,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
             h2 Downey
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/73758A16/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/73758A16/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/73758A16/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project         
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/73758A16/73758A16_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.21.KgCE9q&id=530264240393", target="_blank")      
 
-//New Product 12 Modal  
-#galleryModal12.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//SPR09A11 Modal  
+#SPR09A11Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -319,26 +221,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
             h2 Ledger
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/SPR09A11/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR09A11/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR09A11/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project  
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/SPR09A11/SPR09A11_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.39.KgCE9q&id=529721414502", target="_blank")   
 
-//New Product 13 Modal  
-#galleryModal13.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//SPR09C10 Modal  
+#SPR09C10Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -347,26 +238,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
             h2 Ledger
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/SPR09C10/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR09C10/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR09C10/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project        
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/SPR09C10/SPR09C10_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.42.KgCE9q&id=529674499452", target="_blank")         
 
-//New Product 14 Modal  
-#galleryModal14.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//SPR09C9414 Modal  
+#SPR09C94Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -375,26 +255,15 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
             h2 Ledger
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/SPR09C94/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR09C94/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR09C94/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project 
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/SPR09C94/SPR09C94_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.36.KgCE9q&id=529730286609", target="_blank") 
 
-//New Product 15 Modal  
-#galleryModal15.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+//SPR096C10 Modal  
+#SPR096C10Modal.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -403,20 +272,9 @@
       .row
         .col-lg-8.col-lg-offset-2
           .modal-body
-            // Project Details Go Here
             h2 DiCaprio
-            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-            img.img-responsive.img-centered(src="images/productimgs/SPR096C10/1.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR096C10/2.jpg", alt="")
-            img.img-responsive.img-centered(src="images/productimgs/SPR096C10/3.jpg", alt="")
-            p
-              | Dreams is a free PSD web template built by
-              a(href="https://www.behance.net/MathavanJaya") Mathavan Jaya
-              | . Dreams is a modern one page web template designed for almost any purpose. It&#8217;s a beautiful template that&#8217;s designed with the Bootstrap framework in mind.
-            p
-              | You can download the PSD template in this portfolio sample item at
-              a(href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/") FreebiesXpress.com
-              | .
-            button.btn.btn-primary(type="button", data-dismiss="modal")
-              i.fa.fa-times
-              | Close Project                                                                                                             
+            - var n = 1
+            ul
+              while n < 14
+                li!='<img  src="images/productimgs/SPR096C10/SPR096C10_'+n+++'.jpg">'
+            a.btn.btn-primary(href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-13827413326.51.KgCE9q&id=529511323714", target="_blank")                           

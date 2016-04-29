@@ -53,8 +53,21 @@ block content
       .container-fluid
         .row
           .col-md-12.col-sm-12
-            div(data-wow-delay='.3s', data-wow-duration='500ms')
-              img.img-responsive(src="images/fullsize/new-glasses.jpg")
+            div#carousel-example-generic.carousel.slide(data-wow-delay='.3s', data-wow-duration='500ms',data-ride="carousel")
+              ol.carousel-indicators
+                li.active(data-target="#carousel-example-generic",data-slide-to="0")
+                li(data-target="#carousel-example-generic",data-slide-to="1")
+              .carousel-inner(role="listbox")
+                .item.active   
+                  img.img-responsive(src="images/slider/1.jpg")
+                .item
+                  img.img-responsive(src="images/slider/2.jpg")
+              a.left.carousel-control(role="button",href="#carousel-example-generic",data-slide="prev")
+                span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+                span.sr-only Previous
+              a.right.carousel-control(role="button",href="#carousel-example-generic",data-slide="next")
+                span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+                span.sr-only Next
 
     //
       ==================================================
@@ -74,7 +87,7 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='0ms')
               .img-wrapper
-                a(href="#portfolioModal1", data-toggle="modal")
+                a(href="#1287C19Modal", data-toggle="modal")
                   img.img-responsive(src='images/productimgs/1287C19/1.jpg', alt='this is a title')
               |                                 
               figcaption
@@ -88,7 +101,7 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='300ms')
               .img-wrapper
-                a(href="#portfolioModal2", data-toggle="modal")
+                a(href="#3016A3Modal", data-toggle="modal")
                   img.img-responsive(src='images/productimgs/3016A3/1.jpg', alt='this is a title')
               |                                 
               figcaption
@@ -102,7 +115,7 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='600ms')
               .img-wrapper
-                a(href="#portfolioModal3", data-toggle="modal")
+                a(href="#5156C19Modal", data-toggle="modal")
                   img.img-responsive(src='images/productimgs/5156C19/1.jpg', alt='this is a title')
               |                                 
               figcaption
@@ -116,7 +129,7 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='900ms')
               .img-wrapper
-                a(href="#portfolioModal4", data-toggle="modal")
+                a(href="#5221Modal", data-toggle="modal")
                   img.img-responsive(src='images/productimgs/5221金/1.jpg', alt='this is a title')
               |                                 
               figcaption
@@ -130,7 +143,7 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='1200ms')
               .img-wrapper
-                a(href="#portfolioModal5", data-toggle="modal")
+                a(href="#5225Modal", data-toggle="modal")
                   img.img-responsive(src='images/productimgs/5225/1.jpg', alt='this is a title')
               |                                 
               figcaption
@@ -144,7 +157,7 @@ block content
           .col-sm-4.col-xs-12
             figure.wow.fadeInLeft.animated.portfolio-item(data-wow-duration='500ms', data-wow-delay='1500ms')
               .img-wrapper
-                a(href="#portfolioModal6", data-toggle="modal")
+                a(href="#5353C19Modal", data-toggle="modal")
                   img.img-responsive(src='images/productimgs/5353C19/1.jpg', alt='this is a title')
               |                                 
               figcaption
@@ -267,4 +280,4 @@ block content
       ==================================================
     include ../layouts/calltoaction.jade 
 
-    include ../layouts/newproductmodals.jade
+    include ../layouts/gallerymodals.jade
