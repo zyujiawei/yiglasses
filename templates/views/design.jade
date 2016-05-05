@@ -14,29 +14,55 @@ block content
     // /#Page header
     section#gallery.gallery
       .container
-        .row
-          .col-sm-12.col-xs-12
-            .design-figure.wow.fadeInLeft.container(data-wow-duration='500ms', data-wow-delay='0ms')
-              .img-wrapper
-                .row
-                  .col-sm-8.col-xs-12.innercontainer
-                    img.img-responsive(src='images/designimgs/1.jpg', alt='this is a title')
-                  .col-sm-4.col-xs-12.innercontainer
-                    figcaption
-                      h4 Brando
-                    p 此款眼镜将会在5月1日正式上市
-                    p 正式售价为 499
-                    .progress
-                      .progress-bar.progress-bar-warning(role="progressbar",aria-valuenow="60",aria-valuemin="0",aria-valuemax="100",style="width: 60%")
-                        | 60%
-                        span.sr-only 60%
-                    button.btn.btn-success.btn-lg.col-sm-5.col-xs-5#likebutton
-                      i.fa.fa-thumbs-up
-                      | 喜欢(1023)
-                    button.btn.btn-danger.btn-lg.col-sm-5.col-xs-5.col-sm-offset-2.col-xs-offset-2#dislikebutton
-                      i.fa.fa-thumbs-down
-                      | 不喜欢(234)
-                //- .row                           
+        //- .row
+        //-   .col-sm-12.col-xs-12
+        //-     .design-figure.wow.fadeInLeft.container(data-wow-duration='500ms', data-wow-delay='0ms')
+        //-       .img-wrapper
+        //-         .row
+        //-           .col-sm-8.col-xs-12.innercontainer
+        //-             img.img-responsive(src='images/designimgs/1.jpg', alt='this is a title')
+        //-           .col-sm-4.col-xs-12.innercontainer
+        //-             figcaption
+        //-               h4 Brando
+        //-             p 此款眼镜将会在5月1日正式上市
+        //-             p 正式售价为 499
+        //-             p 已有
+        //-             h3 500人喜欢
+        //-             .progress
+        //-               .progress-bar.progress-bar-warning(role="progressbar",aria-valuenow="60",aria-valuemin="0",aria-valuemax="100",style="width: 60%")
+        //-                 span.sr-only 60%
+        //-             h5 当前进度60%
+        //-             button.btn.btn-success.btn-lg.col-sm-5.col-xs-5.likebutton
+        //-               i.fa.fa-thumbs-up
+        //-               |  喜欢
+        //-             button.btn.btn-danger.btn-lg.col-sm-5.col-xs-5.col-sm-offset-2.col-xs-offset-2.dislikebutton
+        //-               i.fa.fa-thumbs-down
+        //-               |  不喜欢
+                //- .row
+        each design in data.designs                        
+          .row
+            .col-sm-12.col-xs-12
+              .design-figure.wow.fadeInLeft.container(data-wow-duration='500ms', data-wow-delay='0ms')
+                .img-wrapper
+                  .row
+                    .col-sm-8.col-xs-12.innercontainer
+                      img.img-responsive(src='images/designimgs/'+design.image.filename, alt='this is a title')
+                    .col-sm-4.col-xs-12.innercontainer
+                      figcaption
+                        h4 #{design.name}
+                      p 此款眼镜将会在5月1日正式上市
+                      p 正式售价为 499
+                      p 已有
+                      h3 #{design.count}人喜欢
+                      .progress
+                        .progress-bar.progress-bar-warning(role="progressbar",aria-valuenow="60",aria-valuemin="0",aria-valuemax="100",style="width:"+design.percentage+'%')
+                      h5 当前进度#{design.percentage}%
+                      button.btn.btn-success.btn-lg.col-sm-5.col-xs-5.likebutton
+                        i.fa.fa-thumbs-up
+                        |  喜欢
+                      button.btn.btn-danger.btn-lg.col-sm-5.col-xs-5.col-sm-offset-2.col-xs-offset-2.dislikebutton
+                        i.fa.fa-thumbs-down
+                        |  不喜欢                 
                 //-   figcaption
                 //-     h4
                 //-       a Brando

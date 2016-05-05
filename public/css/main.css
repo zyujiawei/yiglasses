@@ -476,6 +476,30 @@ figure figcaption p {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
 
+.likebutton {
+  background:#82C0AF;
+  border-color:#82C0AF;
+}
+
+.likebutton:hover {
+  background:#82C0AF;
+  border-color:#82C0AF;
+}
+
+.dislikebutton{
+  background:#BF8069;
+  border-color:#BF8069;
+}
+
+.dislikebutton:hover{
+  background:#BF8069;
+  border-color:#BF8069;
+}
+
+/*.progress-bar-warning{
+  background: #82C0AF;
+}*/
+
 #feature {
   padding: 80px 0;
 }
