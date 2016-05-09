@@ -55,6 +55,7 @@ exports = module.exports = function(app) {
 	app.get('/single-post', routes.views.singlepost);
 	app.get('/map', routes.views.map);
 	app.post('/sendmail',routes.views.sendmail);
+	app.get('/likedesign',routes.views.likedesign);
 	app.get('/qhyc',routes.qhyc.index)
 	app.get('*', routes.views.error404);
 

@@ -43,7 +43,7 @@
 
 jQuery(document).ready(function(){
 	"use strict";
-	new WOW().init();
+	//new WOW().init();
 
 
 (function(){
@@ -91,6 +91,23 @@ $(document).ready(function(){
             $('#sendModal').modal('show');
         });
         return false; // 阻止表单自动提交事件
+    });
+
+    $('.likebutton').click(function(){
+        var model = $(this).data('model');
+        var button = $(this);
+        // alert(model);
+        $.get("likedesign?model="+model,function(data,status){
+            if(status == 'success'){
+                button.text("感谢您的投票");
+                
+            }
+        });
+        
+    });
+    $('.dislikebutton').click(function(){
+        $(this).text("我们会加油改进");
+        
     });
 
 });

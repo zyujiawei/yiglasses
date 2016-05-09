@@ -30,5 +30,5 @@ Designcount.add({
 // 	return this.content.extended || this.content.brief;
 // });
 
-Designcount.defaultColumns = 'name|20%, model|20%, limit|20%, limit|20%';
+Designcount.defaultColumns = 'name|20%, model|20%, limit|20%, count|20%';
 Designcount.register();
