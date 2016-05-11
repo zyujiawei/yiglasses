@@ -57,6 +57,57 @@ jQuery(document).ready(function(){
 
 $(document).ready(function(){
 
+    //initialize lazyload in modals 
+    $('#1287C19Modal').on('show.bs.modal', function () {
+        $('#1287C19Modal').find("img.lazy").lazyload();
+    });
+
+    $('#3016A3Modal').on('show.bs.modal', function () {
+        $('#3016A3Modal').find("img.lazy").lazyload();
+    });
+
+    $('#5156C19Modal').on('show.bs.modal', function () {
+        $('#5156C19Modal').find("img.lazy").lazyload();
+    });
+
+    $('#5221Modal').on('show.bs.modal', function () {
+        $('#5221Modal').find("img.lazy").lazyload();
+    });
+
+    $('#5225Modal').on('show.bs.modal', function () {
+        $('#5225Modal').find("img.lazy").lazyload();
+    });
+
+    $('#5353C19Modal').on('show.bs.modal', function () {
+        $('#5353C19Modal').find("img.lazy").lazyload();
+    });
+
+    $('#73578A5Modal').on('show.bs.modal', function () {
+        $('#73578A5Modal').find("img.lazy").lazyload();
+    });
+
+    $('#73758A16Modal').on('show.bs.modal', function () {
+        $('#73758A16Modal').find("img.lazy").lazyload();
+    });
+
+    $('#SPR09A11Modal').on('show.bs.modal', function () {
+        $('#SPR09A11Modal').find("img.lazy").lazyload();
+    });
+
+    $('#SPR09C10Modal').on('show.bs.modal', function () {
+        $('#SPR09C10Modal').find("img.lazy").lazyload();
+    });
+
+    $('#SPR09C94Modal').on('show.bs.modal', function () {
+        $('#SPR09C94Modal').find("img.lazy").lazyload();
+    });
+
+    $('#SPR096C10Modal').on('show.bs.modal', function () {
+        $('#SPR096C10Modal').find("img.lazy").lazyload();
+    });
+
+    //lazyload initialize finished
+
 
 
 
