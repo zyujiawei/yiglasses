@@ -46,9 +46,9 @@ jQuery(document).ready(function(){
 	//new WOW().init();
 
 
-(function(){
- jQuery('.smooth-scroll').scrollingTo();
-}());
+    // (function(){
+    //  jQuery('.smooth-scroll').scrollingTo();
+    // }());
 
 });
 
@@ -123,14 +123,14 @@ $(document).ready(function(){
         }
     });
 
-    $("#clients-logo").owlCarousel({
+    // $("#clients-logo").owlCarousel({
  
-        itemsCustom : false,
-        pagination : false,
-        items : 5,
-        autoplay: true,
+    //     itemsCustom : false,
+    //     pagination : false,
+    //     items : 5,
+    //     autoplay: true,
 
-    });
+    // });
 
     $('#contact-form').on('submit',function() {
         $.post("sendmail", {
