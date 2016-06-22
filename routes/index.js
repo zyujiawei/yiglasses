@@ -56,7 +56,9 @@ exports = module.exports = function(app) {
 	app.get('/map', routes.views.map);
 	app.post('/sendmail',routes.views.sendmail);
 	app.get('/likedesign',routes.views.likedesign);
-	app.get('/qhyc',routes.qhyc.index)
+	app.get('/wechatauth',routes.views.wechatauth);
+	app.get('/qhyc',routes.qhyc.index);
+
 	app.get('*', routes.views.error404);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
