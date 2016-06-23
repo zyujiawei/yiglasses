@@ -1,0 +1,159 @@
+doctype html
+//
+  Author: W3layouts
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html
+  // Head
+  head
+    title &#x6DF1;&#x5733;&#x5E02;&#x6B66;&#x8B66;&#x8FB9;&#x9632;&#x7CFB;&#x7EDF;
+    // For-Mobile-Apps
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Multi Login & Signup Form Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // //For-Mobile-Apps
+    // Style.CSS
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+    // Web-Fonts
+    link(href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Lato:400,700,900,300', rel='stylesheet', type='text/css')
+    // //Web-Fonts
+    // Horizontal-Tabs-JavaScript
+    script(src='js/jquery-1.11.1.min.js')
+    script(src='js/easyResponsiveTabs.js', type='text/javascript')
+    script(type='text/javascript').
+      $(document).ready(function () {
+      $('#horizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      });
+      });
+    // Horizontal-Tabs-JavaScript
+  // Head
+  // Body
+  body
+    // Heading
+    h1 &#x6DF1;&#x5733;&#x5E02;&#x6B66;&#x8B66;&#x8FB9;&#x9632;&#x7CFB;&#x7EDF;&#x767B;&#x5F55;
+    // //Headng
+    // Container
+    .container
+      .tabs
+        .sap_tabs
+          #horizontalTab(style='display: block; width: 100%; margin: 0px;')
+            ul.resp-tabs-list
+              li.resp-tab-item(aria-controls='tab_item-1', role='tab')
+                h2
+                  span &#x7528;&#x6237;&#x767B;&#x5F55;
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.resp-tab-item(aria-controls='tab_item-2', role='tab')
+                span &#x6CE8;&#x518C;&#x7ED1;&#x5B9A;
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.resp-tab-item(aria-controls='tab_item-3', role='tab')
+                span &#x91CD;&#x7F6E;&#x5BC6;&#x7801;
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.resp-tab-item(aria-controls='tab_item-4', role='tab')
+                span &#x5BFB;&#x6C42;&#x5E2E;&#x52A9;
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .clear  
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .resp-tabs-container
+              .tab-1.resp-tab-content(aria-labelledby='tab_item-1')
+                // Form
+                form(action='#', method='post')
+                  input(type='text', name='Username', placeholder='用户名', required='')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  input(type='password', name='Password', placeholder='密码', required='')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  ul
+                    li
+                      input#brand1(type='checkbox', value='')
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      label(for='brand1')
+                        span
+                        | &#x4E0E;&#x5FAE;&#x4FE1;&#x53F7;&#x7ED1;&#x5B9A;&#x767B;&#x5F55;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  input(type='submit', value='登录')
+                // //Form
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .tab-2.resp-tab-content(aria-labelledby='tab_item-2')
+                .register
+                  form(action='#', method='post')
+                    input(type='text', name='姓名', placeholder='姓名', required='')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    input(type='text', name='身份证', placeholder='身份证号码', required='')
+                    // <input type="text" Name="Last Name" placeholder="Last Name" required="">
+                    input.lessgap(type='text', name='手机号码', placeholder='手机号码', required='')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    input(type='password', name='密码', placeholder='密码', required='')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    input.lessgap(type='password', name='确认密码', placeholder='确认 密码', required='')
+                    // <input type="text" Name="Phone Number" placeholder="Phone Number" required="">
+                    .send-button
+                      input(type='submit', value='注册')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .tab-3.resp-tab-content(aria-labelledby='tab_item-3')
+                .reset
+                  form(action='#', method='post')
+                    input(type='text', name='身份证', placeholder='身份证号码', required='')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    p (Or)
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    input(type='text', name='手机', placeholder='手机号码', required='')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    input(type='submit', value='重置密码')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .tab-4.resp-tab-content(aria-labelledby='tab_item-4')
+                .main
+                  //
+                    <ul class="cbp-ig-grid">
+                    <li>
+                    <a href="#">
+                    <img src="images/facebook.png" class="cbp-ig-icon cbp-ig-icon-facebook" alt="Fashion">
+                    <h3 class="cbp-ig-title">Facebook</h3>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="images/twitter.png" class="cbp-ig-icon cbp-ig-icon-twitter" alt="Fashion">
+                    <h3 class="cbp-ig-title">Twitter</h3>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="images/gplus.png" class="cbp-ig-icon cbp-ig-icon-gplus" alt="Fashion">
+                    <h3 class="cbp-ig-title">Google +</h3>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="images/pinterest.png" class="cbp-ig-icon cbp-ig-icon-pinterest" alt="Fashion">
+                    <h3 class="cbp-ig-title">Pinterest</h3>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="images/tumblr.png" class="cbp-ig-icon cbp-ig-icon-tumblr" alt="Fashion">
+                    <h3 class="cbp-ig-title">Tumblr</h3>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="images/linkedin.png" class="cbp-ig-icon cbp-ig-icon-linkedin" alt="Fashion">
+                    <h3 class="cbp-ig-title">Linkedin</h3>
+                    </a>
+                    </li>
+                    </ul>
+                  h1 &#x5982;&#x9047;&#x95EE;&#x9898;&#x8BF7;&#x62E8;&#x6253;&#x53F7;&#x7801;0755-12345678
+    // //Container
+    // Footer
+    .footer
+      // Copyright
+      .copyright
+        // <p> &copy; 2016 Multi Login & Signup Form. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+      // //Copyright
+    // //Footer
+  // //Body

@@ -58,6 +58,7 @@ exports = module.exports = function(app) {
 	app.get('/likedesign',routes.views.likedesign);
 	app.get('/wechatauth',routes.views.wechatauth);
 	app.get('/qhyc',routes.qhyc.index);
+	app.get('/login',routes.qhyc.login);
 
 	app.get('*', routes.views.error404);
 
