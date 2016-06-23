@@ -11,8 +11,8 @@ exports = module.exports = function(req, res) {
 	var timestamp = req.query.timestamp;
 	var nonce = req.query.nonce;
 	var echostr = req.query.echostr
-	console.log(signature);
-	console.log(echostr);
+	res.write(echostr);
+	res.end();
 	// Render the view
 	// view.render('index');
 	
