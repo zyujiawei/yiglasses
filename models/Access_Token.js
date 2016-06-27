@@ -17,4 +17,3 @@ access_token.add({
 });
 access_token.defaultColumns = ' content|20%, expire|20%, publishedDate|20%';
 access_token.register();
-test
